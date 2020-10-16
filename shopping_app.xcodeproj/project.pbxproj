@@ -91,6 +91,7 @@
 		7A4F1F4D2538B41600688F03 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7AD1B5CE25384EC9002BC0A0 /* Controllers */,
 				7A4F1F3E2538737000688F03 /* ProductTableViewCell.swift */,
 				7A4F1F3F2538737000688F03 /* ProductTableViewCell.xib */,
 			);
@@ -123,7 +124,6 @@
 				7A4F1F4D2538B41600688F03 /* Views */,
 				7AD1B5D325384F97002BC0A0 /* ViewModels */,
 				7AD1B5CF25384F19002BC0A0 /* Common */,
-				7AD1B5CE25384EC9002BC0A0 /* Controllers */,
 				7AD1B5C12538494F002BC0A0 /* Services */,
 				7AD1B5B82538474B002BC0A0 /* Models */,
 				7AD1B58B25384627002BC0A0 /* Main.storyboard */,

@@ -84,7 +84,6 @@ extension SearchProductViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if let model = productViewModel.resultModel {
             if productViewModel.shouldLoadMore() && self.isReachedBottom(scrollView: scrollView) {
-                print("current page \(model.currentPage)")
                 tableView.tableFooterView = createSpinnerView()
                 let requestModel = RequestModel(query: searchController.searchBar.text!, page: model.currentPage + 1)
                 self.search(requestModel: requestModel, loadMore: true, completion: {
@@ -120,7 +119,6 @@ extension SearchProductViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let model = productViewModel.resultModel {
-            print(model.products.count)
             return model.products.count
         } else {
             return 0
